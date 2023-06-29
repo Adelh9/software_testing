@@ -1,3 +1,23 @@
+## Run Locally
+
+Start the server and run web UI application
+
+```bash
+    python main.py run
+```
+
+Run Unit Test
+
+```bash
+    python main.py unit_test
+```
+
+Run UI Test
+
+```bash
+    python main.py webui_test
+```
+
 # Bug Report
 ## Unit Tests
 ### Bug 1:
@@ -31,3 +51,6 @@ Test Failed: Matrix with single row
 
 ## UI Test
 No Bugs encountered
+
+## Bug Report Conclusion
+Most of the bugs encountered due to neet code solution being optimized for a square matrix hence it hit beyond the range on irregular or non square matrices.
