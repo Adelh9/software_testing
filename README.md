@@ -57,8 +57,9 @@ Test Failed: Matrix with single row
 **Test Failed:** Matrix with irregular dimension
 
 ## UI Tests
-**Bug Type** Wrong answer
-**Input:** ""
+### Bug 1:
+**Bug Type:** Wrong answer
+**Input:** " "
 
 **Test Failed:** Empty Output
 
