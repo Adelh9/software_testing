@@ -58,7 +58,8 @@ Test Failed: Matrix with single row
 
 ## UI Tests
 ### Bug 1:
-**Bug Type:** Wrong answer
+**Bug Type:** Wrong answer 
+
 **Input:** " "
 
 **Test Failed:** Empty Output
