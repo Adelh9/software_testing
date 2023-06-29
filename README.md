@@ -1,5 +1,12 @@
 ## Run Locally
 
+Installed dependencies
+```bash
+    pip install -r requirements.txt
+```
+
+
+
 Start the server and run web UI application
 
 ```bash
