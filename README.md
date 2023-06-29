@@ -49,8 +49,11 @@ Test Failed: Matrix with single row
         
 **Test Failed:** Matrix with irregular dimension
 
-## UI Test
-No Bugs encountered
+## UI Tests
+**Bug Type** Wrong answer
+**Input:** ""
+
+**Test Failed:** Empty Output
 
 ## Bug Report Conclusion
 Most of the bugs encountered due to neet code solution being optimized for a square matrix hence it hit beyond the range on irregular or non square matrices.

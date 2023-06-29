@@ -10,8 +10,10 @@ def index():
 
 @app.route('/solve', methods=['POST'])
 def solve():
-    matrix_str = request.form['matrix'].replace('; ', ',').replace(', ', ',').replace(' ', ',')
-    print(matrix_str)
+    matrix_str = request.form['matrix'].strip().replace('; ', ',').replace(', ', ',').replace(' ', ',')
+    #Insertion after 1st Bug
+    if matrix_str == '':
+        return (jsonify([]))
     matrix = [[int(num) for num in row.split(',')] for row in matrix_str.split('\n')]
     result = spiralOrder(matrix)
     return jsonify(result=result)

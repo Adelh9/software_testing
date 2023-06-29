@@ -1,0 +1,12 @@
+Passed Test case 7: 1x1 matrix
+Passed Test case 3: 2x2 matrix
+Passed Test case 1: 3x3 matrix
+Passed Test case 2: 4x5 matrix
+Passed Test case 4: Empty matrix
+Passed Test case 10: Matrix with irregular dimensions
+Passed Test case 8: Matrix with negative values
+Passed Test case 12: Matrix with repeating elements
+Passed Test case 11: Matrix with uneven dimensions
+Passed Test case 9: Matrix with zero values
+Passed Test case 6: Matrix with a single column
+Passed Test case 5: Matrix with a single row

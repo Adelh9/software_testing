@@ -1,5 +1,6 @@
 import unittest
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 import itertools
 
 class SpiralMatrixSolverTest(unittest.TestCase):
@@ -42,15 +43,15 @@ class SpiralMatrixSolverTest(unittest.TestCase):
         # EP test cases
         for test_case in ep_test_cases:
             with self.subTest(test_case=test_case):
-                matrix_input = self.driver.find_element_by_id("matrix")
+                matrix_input = self.driver.find_element(By.ID, "matrix")
                 matrix_input.clear()
                 matrix_input.send_keys(test_case["input"])
 
-                submit_button = self.driver.find_element_by_xpath("//input[@type='submit']")
+                submit_button = self.driver.find_element(By.XPATH, "//input[@type='submit']")
                 submit_button.click()
 
-                result_list = self.driver.find_element_by_id("result")
-                result_items = result_list.find_elements_by_tag_name("li")
+                result_list = self.driver.find_element(By.ID, "result")
+                result_items = result_list.find_elements(By.TAG_NAME, "li")
 
                 self.assertEqual(len(result_items), len(test_case["expected_output"]))
 
@@ -61,15 +62,15 @@ class SpiralMatrixSolverTest(unittest.TestCase):
         # BVA test cases
         for test_case in bva_test_cases:
             with self.subTest(test_case=test_case):
-                matrix_input = self.driver.find_element_by_id("matrix")
+                matrix_input = self.driver.find_element(By.ID, "matrix")
                 matrix_input.clear()
                 matrix_input.send_keys(test_case["input"])
 
-                submit_button = self.driver.find_element_by_xpath("//input[@type='submit']")
+                submit_button = self.driver.find_element(By.XPATH, "//input[@type='submit']")
                 submit_button.click()
 
-                result_list = self.driver.find_element_by_id("result")
-                result_items = result_list.find_elements_by_tag_name("li")
+                result_list = self.driver.find_element(By.ID, "result")
+                result_items = result_list.find_elements(By.TAG_NAME, "li")
 
                 self.assertEqual(len(result_items), len(test_case["expected_output"]))
 
